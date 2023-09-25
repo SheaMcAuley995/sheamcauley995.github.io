@@ -9,48 +9,94 @@ body {
     background-color: #3c444c;
 }
 
-#portfolio {
-    margin: 20px auto;
-    width: 400px;
-    height: 400px;
-    flex-direction: column;
+/* New styles for the "About Me" section with a static size */
+#about {
+    height: 550px; /* Set the desired fixed height for the section */
+    margin-left:auto;
+    margin-right:auto;
+    width:960px;
+    background-color: #24262f; /* Optional background color for the "About Me" section */
+    padding: 10px;
+    font-size: 16px;
     text-align: center;
-    display: grid;
-    grid-template-columns: 200px 200px;
-    grid-row: auto auto;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    gap: 20px;
+}
+
+#about h2 {
+    font-size: 2rem;
+    background-color: #24262f; /* Set the background color for the heading */
+    padding: 20px; /* Add some padding to separate it from the background */
+}
+
+#about p {
+    font-size: 1.2rem;
+    padding: 20px; /* Add some padding to separate it from the background */
+}
+
+
+#portfolio {
+    background-color: #494d55; /* Set the background color for the title */
+    margin: 20px auto;
+    width:  800px;
+    height: 600px;
 }
 
 .portfolio-title {
     font-size: 2rem;
     margin-top: 20px; /* Adjust as needed to create spacing between title and projects */
-    background-color: #494d55; /* Set the background color for the title */
     padding: 10px; /* Add padding to style the title */
 }
 
-.project {
+.project-grid{
+    display:grid;
+    grid-template-columns: 350px 200px;
+    grid-row: auto auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.project{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
     background-color: #4f5e6a;
     padding: 20px;
     border: 1px solid #24262f;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    position: relative;
+    background-color:#333;
+    padding:20px;
+    border-radius:10px;
+    font-size:40px;
+    font-family: Arial, sans-serif;
     cursor: pointer; /* Change cursor on hover */
     transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
+
+/* Add a class to control opacity and animation */
+.project.hidden {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: Add a slight upward translation */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Keyframes for the fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Optional: Add a slight upward translation */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 /* Hover effect styles */
 .project:hover {
     transform: scale(1.05); /* Scale up on hover */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a stronger shadow on hover */
     background-color: #566169; /* Change background color on hover */
-}
-
-.project {
-    margin-bottom: 30px;
 }
 
 .project img {
@@ -66,44 +112,14 @@ body {
     font-size: 1rem;
 }
 
-/* Fixed positions for projects */
-.project1 {
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 1;
-}
-
-.project2 {
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 1;
-}
 
 header {
     background-color: #323232;
     color: #ce6a6c;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 
-/* New styles for the "About Me" section with a static size */
-#about {
-    height: 300px; /* Set the desired fixed height for the section */
-    background-color: #24262f; /* Optional background color for the "About Me" section */
-    padding: 20px;
-    font-size: 16px;
-    text-align: center;
-}
-
-#about h2 {
-    font-size: 2rem;
-    background-color: #24262f; /* Set the background color for the heading */
-    padding: 20px; /* Add some padding to separate it from the background */
-}
-
-#about p {
-    font-size: 1.2rem;
-    background-color: #24262f; /* Set the background color for the body text */
-    padding: 20px; /* Add some padding to separate it from the background */
-}
 
 nav ul {
     list-style: none;

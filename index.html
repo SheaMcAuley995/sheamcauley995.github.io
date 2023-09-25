@@ -27,6 +27,7 @@
 
     <section id="about">
         <h2>About Me</h2>
+        <img src="images/Shea_Mcauley_ProfilePicture.png" alt="Project 1">
         <p>As a Software Engineer II at Hashbang, Inc., I work on developing 
             and maintaining innovative 
             and engaging video games for various platforms and genres. 
@@ -49,27 +50,33 @@
     </section>
 
     <section id="portfolio">
-        <h2 class="portfolio-title">Portfolio
-        <div class="project">
-            <a href="https://elephant-tub-games.itch.io/thumb-maze">
-            <img src="images/alIqBy.jpg" alt="Project 1">
-            <h3>Thumb Maze</h3></a>
-            <p>Have you ever wanted to be chased by a giant man made of thumbs? </p>
+        <h2 class="portfolio-title">Portfolio</h2>
+
+        <div class="project project1 hidden">
+            <div class="project-grid">
+                <div class="project">
+                    <a href="https://play.google.com/store/apps/details?id=com.eastsidegames.theofficeswm&hl=en_US&gl=US">
+                    <img src="images/TheOfficeBanner.png" alt="Project 1">
+                    <h3>The Office: Somehow We</h3></a>
+                    <p>Description of Project 2.</p>
+            </div>
         </div>
-        <div class="project">
-            <a href="https://cafe-interstellar.itch.io/cosmechanics">
-            <img src="images/cosmechanicsIcon.png" alt="Project 2">
-            <h3>Cosmechanics</h3></a>
-            <p>Description of Project 2.</p>
+            <div class="project">
+                <a href="https://cafe-interstellar.itch.io/cosmechanics">
+                <img src="images/CosmechanicsBanner.png" alt="Project 2">
+                <h3>Cosmechanics</h3></a>
+                <p>Description of Project 2.</p>
+            </div>
+            <div class="project">
+                <a href="https://elephant-tub-games.itch.io/thumb-maze">
+                <img src="images/ThumbThumbBanner.png" alt="Project 3">
+                <h3>Thumb Maze</h3></a>
+                <p>Have you ever wanted to be chased by a giant man made of thumbs? </p>
+            </div>
         </div>
-        <div class="project">
-            <a href="https://cafe-interstellar.itch.io/cosmechanics">
-            <img src="images/TheOfficeSomehowWeManageIcon.png" alt="Project 2">
-            <h3>The Office: Somehow We Manage</h3></a>
-            <p>Description of Project 2.</p>
-        </div>
-        <!-- Add more project sections as needed -->
+        
     </section>
+    
 
     <section id="contact">
         <h2>Contact</h2>
@@ -80,3 +87,28 @@
     </section>
 </body>
 </html>
+
+<script>
+    // Function to check if an element is in the viewport
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+        );
+    }
+
+    // Function to handle the scroll event
+    function handleScroll() {
+        const projectSections = document.querySelectorAll('.project.hidden');
+        projectSections.forEach((section) => {
+            if (isInViewport(section)) {
+                section.classList.remove('hidden');
+                section.classList.add('animated'); // Optional: Add a class to prevent repeated animations
+            }
+        });
+    }
+
+    // Add a scroll event listener to trigger the animation
+    window.addEventListener('scroll', handleScroll);
+</script>
