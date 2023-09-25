@@ -1,14 +1,53 @@
 /* Reset some default styles */
-body, h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
+html, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, 
+del, dfn,  img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 5;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
+    display: block;
+    margin: 8;
     font-family: Arial, sans-serif;
     background-color: #3c444c;
+    font-size: 14px;
+    overflow-y: scroll; /* Add vertical scrollbar */
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
+#page {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+
+div {
+    display: block;
+}
 /* New styles for the "About Me" section with a static size */
 #about {
     height: 550px; /* Set the desired fixed height for the section */
@@ -19,6 +58,7 @@ body {
     padding: 10px;
     font-size: 16px;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 #about h2 {
@@ -112,12 +152,14 @@ body {
     font-size: 1rem;
 }
 
-
 header {
     background-color: #323232;
     color: #ce6a6c;
     text-align: center;
-    padding: 10px;
+    margin-top: 25px;
+    padding-bottom: 4px;
+    margin-bottom: 7px;
+    padding: 20px;
 }
 
 
