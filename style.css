@@ -26,7 +26,16 @@ body {
 }
 
 .project {
-    width: 300px;
+    margin: 20px auto;
+    width: 400px;
+    height: 400px;
+    
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+
     background-color: #4f5e6a;
     padding: 20px;
     border: 1px solid #24262f;
