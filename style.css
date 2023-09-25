@@ -85,22 +85,20 @@ header {
     height: 300px; /* Set the desired fixed height for the section */
     background-color: #24262f; /* Optional background color for the "About Me" section */
     padding: 20px;
+    font-size: 16px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 #about h2 {
     font-size: 2rem;
     background-color: #24262f; /* Set the background color for the heading */
-    padding: 10px; /* Add some padding to separate it from the background */
+    padding: 20px; /* Add some padding to separate it from the background */
 }
 
 #about p {
     font-size: 1.2rem;
     background-color: #24262f; /* Set the background color for the body text */
-    padding: 10px; /* Add some padding to separate it from the background */
+    padding: 20px; /* Add some padding to separate it from the background */
 }
 
 nav ul {
@@ -135,5 +133,22 @@ section {
     padding: 20px;
 }
 
-/* Add more CSS styles to customize your portfolio */
+/* Styles for social icons */
+.social-icons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #dedede;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.social-icons a:hover {
+    color: #0074D9; /* Change color on hover */
+}
+
 
