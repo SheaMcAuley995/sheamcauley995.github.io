@@ -49,7 +49,7 @@ hr {
 
 /* Style the PDF resume button */
 .resume-button {
-    background-color: #0074D9; /* Button background color */
+    background-color: #ce6a6c;; /* Button background color */
     color: #fff; /* Button text color */
     padding: 10px 20px; /* Button padding */
     border-radius: 5px; /* Button border radius */
@@ -60,7 +60,7 @@ hr {
 
 /* Hover effect for the button */
 .resume-button:hover {
-    background-color: #0056b3; /* Change background color on hover */
+    background-color: #ce6a6c;; /* Change background color on hover */
 }
 
 #page {
@@ -180,7 +180,12 @@ nav ul li a {
     font-size: 20px;
 	text-decoration: none;
 	color: #c5b3b6;
-	font-weight: bold;
+	font-weight: thin;
+}
+
+nav ul li a:hover
+{
+	color: #ce6a6c;
 }
 
 h1, h2, h3 {
