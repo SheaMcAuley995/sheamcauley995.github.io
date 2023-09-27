@@ -107,7 +107,11 @@ header {
 	width: 800px;
 	height: 600px;
 	margin: 20px auto;
+	border: 1px solid #24262f;
+	border-radius: 10px;
 	background-color: #494d55;
+
+	text-align: center;
 }
 
 .portfolio-title {
@@ -139,23 +143,17 @@ header {
 	transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
-/* Add a class to control opacity and animation */
-.project.hidden {
-	opacity: 0;
-	transform: translateY(20px); /* Optional: Add a slight upward translation */
-	transition: opacity 0.5s ease, transform 0.5s ease;
+/* CSS for the initial state of elements */
+.project.fade-in {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: Add a slight upward translation */
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-/* Keyframes for the fade-in animation */
-@keyframes fadeIn {
-	0% {
-		opacity: 0;
-		transform: translateY(20px); /* Optional: Add a slight upward translation */
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
+/* CSS for the visible state with fade-in animation */
+.project.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Hover effect styles */
