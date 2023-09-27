@@ -156,16 +156,18 @@ header {
     transform: translateY(0);
 }
 
-/* Hover effect styles */
-.project:hover {
-	transform: scale(1.05);
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-	background-color: #566169;
-}
-
 .project img {
+	border: 1px solid #24262f;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
     align-self: center;
 	max-width: 100%;
+}
+
+.project img:hover
+{
+	transform: scale(1.05);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .project h3 {
