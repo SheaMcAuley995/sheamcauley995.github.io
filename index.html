@@ -42,23 +42,39 @@
         </section>
 
         <section id="portfolio">
-            <h2 class="portfolio-title">Personal projects</h2>
+            <h2 class="portfolio-title">Professional projects</h2>
             <div class="project-grid">
                 <div class="project fade-in">
                     <a href="https://play.google.com/store/apps/details?id=com.eastsidegames.theofficeswm&hl=en_US&gl=US">
-                        <img src="images/TheOfficeBanner.png" alt="Cosmechanics">
-                        <h3>Cosmechanics</h3>
+                        <img src="images/TheOfficeBanner.png" alt="TheOfficeBanner">
+                        <h3>The Office: SWM</h3>
                     </a>
                     <p>Software Engineer II | Lead Engineer</p>
-                    <p>Made in Unity</p>
+                    <p><i class="fab fa-unity"></i> Unity</p>
                 </div>
+
+                <div class="project fade-in">
+                    <a href="https://worldoftanks.eu/">
+                        <img src="images/WorldOfTanksBanner.png" alt="WorldOfTanks">
+                        <h3>World Of Tanks</h3>
+                    </a>
+                    <p>Software Engineer Intern</p>
+                    <p><i class="fas fa-code"></i> C++</p>
+                    <p><i class="fab fa-python"></i> Python</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h2 class="portfolio-title">Personal projects</h2>
+            <div class="project-grid">
                 <div class="project fade-in">
                     <a href="https://cafe-interstellar.itch.io/cosmechanics">
                         <img src="images/CosmechanicsBanner.png" alt="Cosmechanics">
                         <h3>Cosmechanics</h3>
                     </a>
                     <p>Lead Developer</p>
-                    <p>Made in Unity</p>
+                    <p><i class="fab fa-unity"></i> Unity</p>
                 </div>
                 <div class="project fade-in">
                     <a href="https://elephant-tub-games.itch.io/thumb-maze">
@@ -66,7 +82,7 @@
                         <h3>Thumb Maze</h3>
                     </a>
                     <p>Lead Developer</p>
-                    <p>Made in Unity</p>
+                    <p><i class="fab fa-unity"></i> Unity</p>
                 </div>
             </div>
         </section>
@@ -74,37 +90,11 @@
         <section id="contact">
             <h2>Contact</h2>
             <p></p>
-            <p><a href="mailto:Shea.McAuley995@gmail.com"> <i class="fas fa-envelope"></a></i> Shea.McAuley995@gmail.com</p>
-            <social-icons>
+            <element class="social-icons">
+                 <a href="mailto:Shea.McAuley995@gmail.com"> <i class="fas fa-envelope"></a></i>
                 <a href="https://github.com/SheaMcAuley995" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/sheamcauley/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            </social-icons>
+            </element>
         </section>
     </div>
-
-    <script>
-        // Function to check if an element is in the viewport
-        function isInViewport(element) {
-            const rect = element.getBoundingClientRect();
-            return (
-                rect.top >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-            );
-        }
-
-        // Function to handle the scroll event
-        function handleScroll() {
-            const projectSections = document.querySelectorAll('.project.hidden');
-            projectSections.forEach((section) => {
-                if (isInViewport(section)) {
-                    section.classList.remove('hidden');
-                    section.classList.add('animated'); // Optional: Add a class to prevent repeated animations
-                }
-            });
-        }
-
-        // Add a scroll event listener to trigger the animation
-        window.addEventListener('scroll', handleScroll);
-    </script>
-</body>
 </html>
