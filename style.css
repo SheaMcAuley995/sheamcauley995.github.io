@@ -48,6 +48,16 @@ footer.contact-info {
 	padding-top: 5px;
 }
 
+footer.contact-info p {
+	font-size: 1.2rem;
+}
+
+footer.contact-info h2
+{
+	margin-bottom: 20px; 
+}
+	
+
 /* Style the horizontal line */
 hr {
     border: none; /* Remove the default line styles */
@@ -106,13 +116,12 @@ hr {
 	border: 1px solid #24262f;
 	border-radius: 10px;
 	background-color: #494d55;
-
 	text-align: center;
 }
 
 .portfolio-title {
 	font-size: 2rem;
-	margin-top: 20px;
+	margin-top: 10px;
 	padding: 10px;
 }
 
@@ -237,9 +246,10 @@ section {
 
 .social-icons a {
 	text-decoration: none;
-	color: #dedede;
-	font-size: 24px;
+	color: #c5b3b6;
+	font-size: 34px;
 	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .social-icons a:hover {
