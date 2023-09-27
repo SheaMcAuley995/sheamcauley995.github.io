@@ -64,7 +64,7 @@ header {
 
 /* New styles for the "About Me" section with a static size */
 #about {
-	height: 650px;
+	height: 450px;
 	margin: 0 auto;
 	background-color: #24262f;
 	padding: 10px;
@@ -86,7 +86,7 @@ header {
 
 #portfolio {
 	width: 700px;
-	height: 400px;
+	height: 350px;
 	margin: 20px auto;
 	border: 1px solid #24262f;
 	border-radius: 10px;
@@ -184,11 +184,14 @@ h1, h2, h3 {
 
 #contact
 {
-	width: 800px;
+	width: 700px;
 	height: 100px;
 	margin: 20px auto;
-	align-content: center;
+	border: 1px solid #24262f;
+	border-radius: 10px;
 	background-color: #494d55;
+
+	text-align: center;
 }
 
 /* Style links to remove text highlight */
@@ -200,7 +203,7 @@ a {
 p {
 	text-decoration: none;
 	color: #c5b3b6;
-	font-weight: bold;
+	font-weight: thin;
 }
 
 section {
