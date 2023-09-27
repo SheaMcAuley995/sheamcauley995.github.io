@@ -40,6 +40,14 @@ header {
 	padding: 20px;
 }
 
+footer.contact-info {
+	border-top: 2px solid #606c78;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
 /* Style the horizontal line */
 hr {
     border: none; /* Remove the default line styles */
@@ -196,13 +204,11 @@ h1, h2, h3 {
 
 #contact
 {
-	width: 700px;
-	height: 100px;
-	margin: 20px auto;
-	border: 1px solid #24262f;
-	border-radius: 10px;
-	background-color: #494d55;
-
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	background-color: #24262f;
+	border-top: 2px solid #606c78;
 	text-align: center;
 }
 
