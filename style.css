@@ -40,6 +40,13 @@ header {
 	padding: 20px;
 }
 
+/* Style the horizontal line */
+hr {
+    border: none; /* Remove the default line styles */
+    border-top: 2px solid #606c78; /* Set the line color and thickness */
+    margin: 8px 0; /* Adjust the margin to control the space above and below the line */
+}
+
 /* Style the PDF resume button */
 .resume-button {
     background-color: #0074D9; /* Button background color */
