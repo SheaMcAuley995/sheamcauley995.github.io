@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/SheaMcAuley995/sheamcauley995.github.io.git/static/css/main.cf890fdb.css",
-    "main.js": "/SheaMcAuley995/sheamcauley995.github.io.git/static/js/main.bff3913b.js",
-    "index.html": "/SheaMcAuley995/sheamcauley995.github.io.git/index.html",
-    "main.cf890fdb.css.map": "/SheaMcAuley995/sheamcauley995.github.io.git/static/css/main.cf890fdb.css.map",
-    "main.bff3913b.js.map": "/SheaMcAuley995/sheamcauley995.github.io.git/static/js/main.bff3913b.js.map"
+    "main.css": "/SheaMcAuley995/sheamcauley995.github.io/static/css/main.cf890fdb.css",
+    "main.js": "/SheaMcAuley995/sheamcauley995.github.io/static/js/main.bff3913b.js",
+    "index.html": "/SheaMcAuley995/sheamcauley995.github.io/index.html",
+    "main.cf890fdb.css.map": "/SheaMcAuley995/sheamcauley995.github.io/static/css/main.cf890fdb.css.map",
+    "main.bff3913b.js.map": "/SheaMcAuley995/sheamcauley995.github.io/static/js/main.bff3913b.js.map"
   },
   "entrypoints": [
     "static/css/main.cf890fdb.css",
