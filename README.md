@@ -1,2 +1,2 @@
-# Shea-McAuley
+# Shea-McAuley Portfolio
  
