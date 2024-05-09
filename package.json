@@ -2,7 +2,7 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/SheaMcAuley995/sheamcauley995.github.io.git",
+  "homepage": "https://sheamcauley995.github.io/sheamcauley995.github.io/",
   "dependencies": {
     "@craco/craco": "^7.1.0",
     "@heroicons/react": "^2.1.3",
