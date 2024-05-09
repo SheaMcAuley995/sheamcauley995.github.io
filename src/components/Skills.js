@@ -1,7 +1,7 @@
 // src/components/About.js
 import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid"; 
 import React from "react";
-import { skills } from "src\components\Skills.js";
+import { skills } from "../data";
 
 export default function Skills() {
     return(
@@ -28,5 +28,3 @@ export default function Skills() {
     </section>
     );
 }
-
-// repeat the same basic structure for all 6 components
